@@ -10,10 +10,18 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    
+    @IBOutlet var message: NSTextView!
+    
+    @IBAction func vuash(_ sender: Any) {
+        
+        print(message.textStorage?.string ?? "")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("view did load")
-        makeHttpRequest()
+        //makeHttpRequest()
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +31,7 @@ class ViewController: NSViewController {
         }
     }
 
-    func makeHttpRequest() {
+    func makeHttpRequest2() {
         let request = NSMutableURLRequest(url: NSURL(string: "http://lvh.me:3000")! as URL)
         request.httpMethod = "POST"
         let postString = "message[data]=example.com"
