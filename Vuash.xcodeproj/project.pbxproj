@@ -11,7 +11,21 @@
 		0F7800AA1ED601A50009462A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7800A91ED601A50009462A /* ViewController.swift */; };
 		0F7800AC1ED601A50009462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7800AB1ED601A50009462A /* Assets.xcassets */; };
 		0F7800AF1ED601A50009462A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7800AD1ED601A50009462A /* Main.storyboard */; };
+		0FA1D0AB1ED6E577001B46D8 /* VuashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA1D0AA1ED6E577001B46D8 /* VuashTests.swift */; };
+		0FAD3FC91ED7101200712533 /* aes.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD3FB61ED7101200712533 /* aes.js */; };
+		0FAD3FDD1ED7102300712533 /* CryptoJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAD3FDC1ED7102300712533 /* CryptoJS.swift */; };
+		C5A7F605AFC13F98C210A8C8 /* Pods_Vuash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE467D4FA6935B5161136B6 /* Pods_Vuash.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA1D0AD1ED6E577001B46D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F78009C1ED601A50009462A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F7800A31ED601A50009462A;
+			remoteInfo = Vuash;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F7800A41ED601A50009462A /* Vuash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vuash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +34,26 @@
 		0F7800AB1ED601A50009462A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F7800AE1ED601A50009462A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F7800B01ED601A50009462A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA1D0A81ED6E577001B46D8 /* VuashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VuashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA1D0AA1ED6E577001B46D8 /* VuashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VuashTests.swift; sourceTree = "<group>"; };
+		0FA1D0AC1ED6E577001B46D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FAD3FB61ED7101200712533 /* aes.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = aes.js; sourceTree = "<group>"; };
+		0FAD3FDC1ED7102300712533 /* CryptoJS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoJS.swift; sourceTree = "<group>"; };
+		3FE467D4FA6935B5161136B6 /* Pods_Vuash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vuash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9124A7242E481F0643F17B4A /* Pods-Vuash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vuash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vuash/Pods-Vuash.release.xcconfig"; sourceTree = "<group>"; };
+		9E5F0FF851626B26B7A8969C /* Pods-Vuash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vuash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vuash/Pods-Vuash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0F7800A11ED601A50009462A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A7F605AFC13F98C210A8C8 /* Pods_Vuash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA1D0A51ED6E577001B46D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,7 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				0F7800A61ED601A50009462A /* Vuash */,
+				0FA1D0A91ED6E577001B46D8 /* VuashTests */,
 				0F7800A51ED601A50009462A /* Products */,
+				54D7819B6FA213CB2B4357F9 /* Pods */,
+				C4535F5231E440B7C3E29E6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7800A41ED601A50009462A /* Vuash.app */,
+				0FA1D0A81ED6E577001B46D8 /* VuashTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +86,8 @@
 		0F7800A61ED601A50009462A /* Vuash */ = {
 			isa = PBXGroup;
 			children = (
+				0FAD3FDC1ED7102300712533 /* CryptoJS.swift */,
+				0FAD3FB61ED7101200712533 /* aes.js */,
 				0F7800A71ED601A50009462A /* AppDelegate.swift */,
 				0F7800A91ED601A50009462A /* ViewController.swift */,
 				0F7800AB1ED601A50009462A /* Assets.xcassets */,
@@ -61,6 +97,32 @@
 			path = Vuash;
 			sourceTree = "<group>";
 		};
+		0FA1D0A91ED6E577001B46D8 /* VuashTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FA1D0AA1ED6E577001B46D8 /* VuashTests.swift */,
+				0FA1D0AC1ED6E577001B46D8 /* Info.plist */,
+			);
+			path = VuashTests;
+			sourceTree = "<group>";
+		};
+		54D7819B6FA213CB2B4357F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E5F0FF851626B26B7A8969C /* Pods-Vuash.debug.xcconfig */,
+				9124A7242E481F0643F17B4A /* Pods-Vuash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4535F5231E440B7C3E29E6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE467D4FA6935B5161136B6 /* Pods_Vuash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F7800B31ED601A50009462A /* Build configuration list for PBXNativeTarget "Vuash" */;
 			buildPhases = (
+				BBCFFFE4F68B04DD868CD7E6 /* [CP] Check Pods Manifest.lock */,
 				0F7800A01ED601A50009462A /* Sources */,
 				0F7800A11ED601A50009462A /* Frameworks */,
 				0F7800A21ED601A50009462A /* Resources */,
+				0576FA963D47AAA33E87747C /* [CP] Embed Pods Frameworks */,
+				1FA0144782ACE5A9AF2A1845 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -80,6 +145,24 @@
 			productName = Vuash;
 			productReference = 0F7800A41ED601A50009462A /* Vuash.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0FA1D0A71ED6E577001B46D8 /* VuashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA1D0B11ED6E577001B46D8 /* Build configuration list for PBXNativeTarget "VuashTests" */;
+			buildPhases = (
+				0FA1D0A41ED6E577001B46D8 /* Sources */,
+				0FA1D0A51ED6E577001B46D8 /* Frameworks */,
+				0FA1D0A61ED6E577001B46D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FA1D0AE1ED6E577001B46D8 /* PBXTargetDependency */,
+			);
+			name = VuashTests;
+			productName = VuashTests;
+			productReference = 0FA1D0A81ED6E577001B46D8 /* VuashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +177,11 @@
 					0F7800A31ED601A50009462A = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+					};
+					0FA1D0A71ED6E577001B46D8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0F7800A31ED601A50009462A;
 					};
 				};
 			};
@@ -111,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				0F7800A31ED601A50009462A /* Vuash */,
+				0FA1D0A71ED6E577001B46D8 /* VuashTests */,
 			);
 		};
 /* End PBXProject section */
@@ -122,10 +211,66 @@
 			files = (
 				0F7800AC1ED601A50009462A /* Assets.xcassets in Resources */,
 				0F7800AF1ED601A50009462A /* Main.storyboard in Resources */,
+				0FAD3FC91ED7101200712533 /* aes.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA1D0A61ED6E577001B46D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0576FA963D47AAA33E87747C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vuash/Pods-Vuash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FA0144782ACE5A9AF2A1845 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vuash/Pods-Vuash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCFFFE4F68B04DD868CD7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F7800A01ED601A50009462A /* Sources */ = {
@@ -133,11 +278,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7800AA1ED601A50009462A /* ViewController.swift in Sources */,
+				0FAD3FDD1ED7102300712533 /* CryptoJS.swift in Sources */,
 				0F7800A81ED601A50009462A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0FA1D0A41ED6E577001B46D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA1D0AB1ED6E577001B46D8 /* VuashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FA1D0AE1ED6E577001B46D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F7800A31ED601A50009462A /* Vuash */;
+			targetProxy = 0FA1D0AD1ED6E577001B46D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F7800AD1ED601A50009462A /* Main.storyboard */ = {
@@ -245,6 +407,7 @@
 		};
 		0F7800B41ED601A50009462A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5F0FF851626B26B7A8969C /* Pods-Vuash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -258,6 +421,7 @@
 		};
 		0F7800B51ED601A50009462A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9124A7242E481F0643F17B4A /* Pods-Vuash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -266,6 +430,34 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.jonathanduarte.Vuash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0FA1D0AF1ED6E577001B46D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VuashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jonathanduarte.VuashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vuash.app/Contents/MacOS/Vuash";
+			};
+			name = Debug;
+		};
+		0FA1D0B01ED6E577001B46D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VuashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jonathanduarte.VuashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vuash.app/Contents/MacOS/Vuash";
 			};
 			name = Release;
 		};
@@ -288,6 +480,16 @@
 				0F7800B51ED601A50009462A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA1D0B11ED6E577001B46D8 /* Build configuration list for PBXNativeTarget "VuashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA1D0AF1ED6E577001B46D8 /* Debug */,
+				0FA1D0B01ED6E577001B46D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

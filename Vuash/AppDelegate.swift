@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import RNCryptor
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
         statusItem?.image = NSImage(named: "send_button")
         statusItem?.action = #selector(AppDelegate.makeHttpRequest)
+        encryptData()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -27,7 +30,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func makeHttpRequest () {
         print("Me!")
     }
-
-
+    
+    func encryptData () {
+        let AES = CryptoJS.AES()
+        
+        // Basic AES encryption
+        let encrypted = AES.encrypt("Secret message", password: "password123")
+        print(encrypted)
+        let decrypted = AES.decrypt(encrypted, password: "password123")
+        print(decrypted)
+        
+    }
 }
 

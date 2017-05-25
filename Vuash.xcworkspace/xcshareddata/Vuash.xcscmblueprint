@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "55200B54C109350EAA458A44D2AFA656E571F1D0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "55200B54C109350EAA458A44D2AFA656E571F1D0" : 9223372036854775807,
+    "F8B997B702166FEFCE45C2523D618890BE64F5B9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8D5E80FF-D7F6-4370-B5AF-5D62D55BBA8A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "55200B54C109350EAA458A44D2AFA656E571F1D0" : "Vuash\/",
+    "F8B997B702166FEFCE45C2523D618890BE64F5B9" : "Vuash\/Vuash\/WebCrypto.swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Vuash",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Vuash.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jonduarte\/Vuash.app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "55200B54C109350EAA458A44D2AFA656E571F1D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/etienne-martin\/WebCrypto.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8B997B702166FEFCE45C2523D618890BE64F5B9"
+    }
+  ]
+}

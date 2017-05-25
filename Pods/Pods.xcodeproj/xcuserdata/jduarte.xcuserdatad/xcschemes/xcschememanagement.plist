@@ -4,24 +4,13 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Vuash.xcscheme</key>
+		<key>Pods-Vuash.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>0F7800A31ED601A50009462A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0FA1D0A71ED6E577001B46D8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
