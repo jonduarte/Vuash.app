@@ -7,22 +7,23 @@
 //
 
 import Cocoa
+import Alamofire
 
 class ViewController: NSViewController {
-
+    
+    let AES = CryptoJS.AES()
+    
     
     @IBOutlet var message: NSTextView!
+    @IBOutlet var linkTextField: NSTextField!
     
     @IBAction func vuash(_ sender: Any) {
-        
-        print(message.textStorage?.string ?? "")
+        makeHttpRequest(message: message.textStorage?.string ?? "")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view did load")
-        //makeHttpRequest()
-        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
@@ -30,27 +31,31 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-    func makeHttpRequest2() {
-        let request = NSMutableURLRequest(url: NSURL(string: "http://lvh.me:3000")! as URL)
-        request.httpMethod = "POST"
-        let postString = "message[data]=example.com"
-        request.httpBody = postString.data(using: String.Encoding.utf8)
-        let task = URLSession.shared.dataTask(with: request as URLRequest){ data, response, error in
-            guard error == nil && data != nil else{
-                print("error")
-                return
-            }
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200{
-                print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(String(describing: response))")
-            }
-            let responseString = String(data: data!, encoding: String.Encoding.utf8)
-            //print("responseString = \(String(describing: responseString))")
-            print(self.findVuashLink(source: responseString!))
-        }
-        task.resume()
+    
+    
+    func makeHttpRequest(message: String) {
+        let request     = "http://lvh.me:3000"
+        let secret      = UUID().uuidString.lowercased()
+        let encrypted   = AES.encrypt(message, password: secret)
         
+        let parameters: Parameters = [
+            "message": [
+                "data": encrypted
+            ]
+        ]
+        
+        print("me")
+        Alamofire.request(request, method: .post, parameters: parameters).responseData { response in
+            let body        = String(data: response.data!, encoding: .utf8)
+            let vuashLink   = self.findVuashLink(source: body!)
+            let link        = "\(vuashLink)#\(secret)"
+            
+            DispatchQueue.main.async(execute: {
+                self.linkTextField.stringValue = link
+                print(link)
+            })
+            
+        }
     }
     
     func findVuashLink(source: String) -> String {
@@ -68,6 +73,7 @@ class ViewController: NSViewController {
         }
         return links.first!
     }
+    
     
 
 }

@@ -6,4 +6,5 @@ target 'Vuash' do
   use_frameworks!
 
   # Pods for Vuash
+  pod 'Alamofire', '~> 4.4'
 end

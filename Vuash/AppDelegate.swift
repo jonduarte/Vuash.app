@@ -18,27 +18,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
         statusItem?.image = NSImage(named: "send_button")
-        statusItem?.action = #selector(AppDelegate.makeHttpRequest)
-        encryptData()
+        statusItem?.action = #selector(AppDelegate.showViewController)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
-    func makeHttpRequest () {
-        print("Me!")
+    func showViewController() {
+        // show main view controller
     }
     
-    func encryptData () {
-        let AES = CryptoJS.AES()
-        
-        // Basic AES encryption
-        let encrypted = AES.encrypt("Secret message", password: "password123")
-        print(encrypted)
-        let decrypted = AES.decrypt(encrypted, password: "password123")
-        print(decrypted)
-        
-    }
 }
 
