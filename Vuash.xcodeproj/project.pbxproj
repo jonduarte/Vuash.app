@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6756B81ED9D2FA0064EA01 /* MessageCreated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6756B71ED9D2FA0064EA01 /* MessageCreated.swift */; };
 		0F7800A81ED601A50009462A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7800A71ED601A50009462A /* AppDelegate.swift */; };
 		0F7800AA1ED601A50009462A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7800A91ED601A50009462A /* ViewController.swift */; };
 		0F7800AC1ED601A50009462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7800AB1ED601A50009462A /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F6756B71ED9D2FA0064EA01 /* MessageCreated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCreated.swift; sourceTree = "<group>"; };
 		0F7800A41ED601A50009462A /* Vuash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vuash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7800A71ED601A50009462A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F7800A91ED601A50009462A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				0FAD3FB61ED7101200712533 /* aes.js */,
 				0F7800A71ED601A50009462A /* AppDelegate.swift */,
 				0F7800A91ED601A50009462A /* ViewController.swift */,
+				0F6756B71ED9D2FA0064EA01 /* MessageCreated.swift */,
 				0F7800AB1ED601A50009462A /* Assets.xcassets */,
 				0F7800AD1ED601A50009462A /* Main.storyboard */,
 				0F7800B01ED601A50009462A /* Info.plist */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6756B81ED9D2FA0064EA01 /* MessageCreated.swift in Sources */,
 				0F7800AA1ED601A50009462A /* ViewController.swift in Sources */,
 				0FAD3FDD1ED7102300712533 /* CryptoJS.swift in Sources */,
 				0F7800A81ED601A50009462A /* AppDelegate.swift in Sources */,

@@ -13,17 +13,18 @@ class ViewController: NSViewController {
     
     let AES = CryptoJS.AES()
     
-    
+    @IBOutlet var scrollView: NSScrollView!
     @IBOutlet var message: NSTextView!
-    @IBOutlet var linkTextField: NSTextField!
+    //@IBOutlet var linkTextField: NSTextField!
     
     @IBAction func vuash(_ sender: Any) {
-        makeHttpRequest(message: message.textStorage?.string ?? "")
+        //makeHttpRequest(message: message.textStorage?.string ?? "")
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.borderType = NSBorderType.noBorder
     }
 
     override var representedObject: Any? {
@@ -51,7 +52,7 @@ class ViewController: NSViewController {
             let link        = "\(vuashLink)#\(secret)"
             
             DispatchQueue.main.async(execute: {
-                self.linkTextField.stringValue = link
+                //self.linkTextField.stringValue = link
                 print(link)
             })
             
