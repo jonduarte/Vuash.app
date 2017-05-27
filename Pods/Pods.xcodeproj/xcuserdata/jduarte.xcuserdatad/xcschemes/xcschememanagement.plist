@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CustomSegue.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FlatButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Vuash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +27,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D8E12ECAA01F5E4C4AEFB90CB15A7E6</key>
+		<key>222F896578EA657C2E21A508A4060F80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DE738A422935570A6C0C2A6B4A34D0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82265CA6C2E0B6275D4DC0392229D5D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

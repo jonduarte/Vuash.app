@@ -12,13 +12,13 @@ import Alamofire
 class ViewController: NSViewController {
     
     let AES = CryptoJS.AES()
-    
+    var shareLink = ""
+    @IBOutlet var btn: NSButton!
     @IBOutlet var scrollView: NSScrollView!
     @IBOutlet var message: NSTextView!
-    //@IBOutlet var linkTextField: NSTextField!
     
     @IBAction func vuash(_ sender: Any) {
-        //makeHttpRequest(message: message.textStorage?.string ?? "")
+        makeHttpRequest(message: message.textStorage?.string ?? "")
     }
     
     
@@ -31,6 +31,13 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        //ViewController = (ViewControllerB *)segue.destinationViewController;
+        //controller.isSomethingEnabled = YES;
+        let vc : MessageCreated = segue.destinationController as! MessageCreated
+        vc.vuashLink = shareLink
     }
     
     
@@ -53,7 +60,8 @@ class ViewController: NSViewController {
             
             DispatchQueue.main.async(execute: {
                 //self.linkTextField.stringValue = link
-                print(link)
+                self.shareLink = link
+                self.performSegue(withIdentifier: "segueMessageCreated", sender: self)
             })
             
         }

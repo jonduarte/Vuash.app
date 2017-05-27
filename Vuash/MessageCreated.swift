@@ -11,11 +11,12 @@ import Cocoa
 class MessageCreated: NSViewController {
 
     @IBOutlet var imageView: NSImageView!
+    var vuashLink = ""
+    @IBOutlet var txtVuashLink: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
-        print("yeay! I was loaded")
+        txtVuashLink.stringValue = vuashLink
     }
     
 }

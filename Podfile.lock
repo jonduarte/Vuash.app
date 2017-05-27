@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - CustomSegue (2.0.0)
+  - FlatButton (1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - CustomSegue
+  - FlatButton
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  CustomSegue: 3fcc304a1f658559f1a1da3c3721c214a7e49352
+  FlatButton: 9995b972cd520be091f0ba6b215b84cbe7d46fa8
 
-PODFILE CHECKSUM: da6f65fb6543571cfc2b9fd7d04be1c108583f9c
+PODFILE CHECKSUM: 2659351dbe2949bcd07e1f91fd64d39207f923c4
 
 COCOAPODS: 1.2.1
