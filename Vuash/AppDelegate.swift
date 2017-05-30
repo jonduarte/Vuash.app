@@ -13,7 +13,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var statusItem : NSStatusItem? = nil
+    var myWindowController: NSWindowController!
 
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
@@ -27,6 +29,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func showViewController() {
         // show main view controller
+        myWindowController = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "initialWindow") as! NSWindowController
+        myWindowController.showWindow(self)
+        //        [myController showWindow:self]; // show the window
+    
     }
     
 }
