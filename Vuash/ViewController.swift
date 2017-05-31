@@ -34,13 +34,14 @@ class ViewController: NSViewController {
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        let vc : MessageCreated = segue.destinationController as! MessageCreated
-        vc.vuashLink = shareLink
+        if let vc = segue.destinationController as? MessageCreated {
+            vc.vuashLink = shareLink
+        }
     }
     
     func makeHttpRequest(message: String) {
         let request     = "http://www.vua.sh"
-        let secret      = UUID().uuidString.lowercased()
+        let secret      =   UUID().uuidString.lowercased()
         let encrypted   = AES.encrypt(message, password: secret)
         
         let parameters: Parameters = [

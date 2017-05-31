@@ -38,6 +38,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func quit() {
         NSApplication.shared().terminate(self)
     }
+    
+    func about() {
+        popover.contentViewController?.performSegue(withIdentifier: "showAbout", sender: self)
+    }
             
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -52,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             let menu = NSMenu()
             
-            menu.addItem(NSMenuItem(title: "About", action: nil, keyEquivalent: ""))
+            menu.addItem(NSMenuItem(title: "About", action: #selector(self.about), keyEquivalent: ""))
             menu.addItem(NSMenuItem.separator())
             menu.addItem(NSMenuItem(title: "Quit", action: #selector(self.quit), keyEquivalent: ""))
             
