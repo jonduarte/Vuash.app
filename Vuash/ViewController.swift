@@ -26,7 +26,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         scrollView.borderType = NSBorderType.noBorder
     }
-
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -34,15 +34,12 @@ class ViewController: NSViewController {
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        //ViewController = (ViewControllerB *)segue.destinationViewController;
-        //controller.isSomethingEnabled = YES;
         let vc : MessageCreated = segue.destinationController as! MessageCreated
         vc.vuashLink = shareLink
     }
     
-    
     func makeHttpRequest(message: String) {
-        let request     = "http://lvh.me:3000"
+        let request     = "http://www.vua.sh"
         let secret      = UUID().uuidString.lowercased()
         let encrypted   = AES.encrypt(message, password: secret)
         
@@ -52,7 +49,6 @@ class ViewController: NSViewController {
             ]
         ]
         
-        print("me")
         Alamofire.request(request, method: .post, parameters: parameters).responseData { response in
             let body        = String(data: response.data!, encoding: .utf8)
             let vuashLink   = self.findVuashLink(source: body!)
@@ -60,6 +56,7 @@ class ViewController: NSViewController {
             
             DispatchQueue.main.async(execute: {
                 //self.linkTextField.stringValue = link
+                self.message.string = ""
                 self.shareLink = link
                 self.performSegue(withIdentifier: "segueMessageCreated", sender: self)
             })
